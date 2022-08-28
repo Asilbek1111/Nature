@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$colour: rgba(255, 255, 255, 0.4);
+$buttonc: rgba(255, 255, 255, 0.5);
+
+body {
+  background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin common {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin button {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset -7px -7px 4px rgba(255, 255, 255, 0.1),
+    inset 7px 7px 4px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 17px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.card {
+  background-color: $colour;
+  backdrop-filter: blur(4px);
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  .c-container {
+    nav {
+      color: white;
+      .n-container {
+        padding: 1rem 4rem;
+        @include common();
+        h2 {
+        }
+        button {
+          @include button();
+        }
+
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 1rem;
+
+          li {
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .header {
+      color: white;
+      .h-container {
+        display: flex;
+
+        .left {
+          padding: 4rem 18rem 2rem 2rem;
+          h1 {
+            font-size: 50px;
+            margin-bottom: 2rem;
+          }
+          p {
+            margin-bottom: 2rem;
+            font-size: 17px;
+          }
+          button {
+            margin: 4rem;
+
+            @include button();
+          }
+
+          .social {
+            display: flex;
+            gap: 1rem;
+
+            span {
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+          }
+        }
+
+        .right {
+          img {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}

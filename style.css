@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.card .c-container nav {
+  color: white;
+}
+
+.card .c-container nav .n-container {
+  padding: 1rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .c-container nav .n-container button {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset -7px -7px 4px rgba(255, 255, 255, 0.1), inset 7px 7px 4px rgba(255, 255, 255, 0.1);
+          box-shadow: inset -7px -7px 4px rgba(255, 255, 255, 0.1), inset 7px 7px 4px rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .c-container nav .n-container button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.card .c-container nav .n-container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.card .c-container nav .n-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.card .c-container .header {
+  color: white;
+}
+
+.card .c-container .header .h-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .c-container .header .h-container .left {
+  padding: 4rem 18rem 2rem 2rem;
+}
+
+.card .c-container .header .h-container .left h1 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.card .c-container .header .h-container .left p {
+  margin-bottom: 2rem;
+  font-size: 17px;
+}
+
+.card .c-container .header .h-container .left button {
+  margin: 4rem;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset -7px -7px 4px rgba(255, 255, 255, 0.1), inset 7px 7px 4px rgba(255, 255, 255, 0.1);
+          box-shadow: inset -7px -7px 4px rgba(255, 255, 255, 0.1), inset 7px 7px 4px rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .c-container .header .h-container .left button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.card .c-container .header .h-container .left .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.card .c-container .header .h-container .left .social span a {
+  text-decoration: none;
+  color: white;
+}
+
+.card .c-container .header .h-container .right img {
+  width: 500px;
+}
+/*# sourceMappingURL=style.css.map */
